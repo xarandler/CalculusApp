@@ -16,11 +16,11 @@ def show_history_of_integral():
 
         - **Gottfried Wilhelm Leibniz (1646–1716)**: Leibniz's work on calculus was more about analysis than geometry. He introduced the integral symbol ∫, which is an elongated 'S' representing 'summa' (Latin for 'sum').
     """)
-    st.image("img/leibniz.jpg", caption="Gottfried Wilhelm Leibniz")
+    st.image("img/leibniz.png", caption="Gottfried Wilhelm Leibniz")
     st.write("""
         - **Isaac Newton (1643–1727)**: Newton approached calculus from a more geometric perspective, focusing on rates of change and slopes of curves.
     """)
-    st.image("img/newton.jpg", caption="Isaac Newton")
+    st.image("img/newton.png", caption="Isaac Newton")
     st.write("""
 
         ## 18th and 19th Centuries: Expansion and Formalization
@@ -28,7 +28,7 @@ def show_history_of_integral():
 
         - **Leonhard Euler (1707–1783)**: Euler made significant contributions to the formalization of calculus and introduced many of its modern terminologies.
     """)
-    st.image("img/euler.jpg", caption="Leonhard Euler")
+    st.image("img/euler.png", caption="Leonhard Euler")
     st.write("""
         - **Carl Friedrich Gauss (1777–1855)**: Known as the 'Prince of Mathematicians', Gauss's work in the field of analysis, especially differential geometry, further advanced the understanding of integrals.
 
