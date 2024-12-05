@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import sympy as sp
 import numpy as np
+import re
 
 def calculate_and_plot_integral(function, lower_limit, upper_limit):
     x = sp.symbols('x')
@@ -20,7 +21,9 @@ def calculate_and_plot_integral(function, lower_limit, upper_limit):
 def show_integral_calculator():
     st.title("Integral Calculator")
 
-    function_input = st.text_input("Enter the integrand function (in terms of x)", "x**2")
+    function_input = st.text_input("Enter the integrand function (in terms of x)", "x^2")
+    function_input = function_input.replace("^", "**")
+    function_input = re.sub(r'(\d)([a-zA-Z])', r'\1*\2', function_input)  # Add * between number and variable
     lower_limit = st.number_input("Enter the lower limit", value=0.0)
     upper_limit = st.number_input("Enter the upper limit", value=1.0)
 
